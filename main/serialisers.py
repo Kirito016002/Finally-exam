@@ -58,3 +58,10 @@ class CartSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Cart
         fields = ['id', 'is_active']
+        
+        
+class OrderSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = models.Order
+        fields = '__all__'
